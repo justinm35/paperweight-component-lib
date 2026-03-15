@@ -40,9 +40,12 @@ export default function Showcase() {
   return (
     <div className="min-h-screen bg-background text-foreground p-8 max-w-5xl mx-auto space-y-12">
       <div className="flex items-start justify-between">
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight font-mono">Paperweight</h1>
-          <p className="text-muted-foreground mt-1">Component Library</p>
+        <div className="flex items-center gap-4">
+          <img src="/mascot.jpg" alt="Paperweight mascot" className="size-14 rounded-[6px]" />
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight font-mono">Paperweight</h1>
+            <p className="text-muted-foreground mt-1">Component Library</p>
+          </div>
         </div>
         <div className="flex items-center gap-3">
           <ColorPicker />
@@ -480,7 +483,12 @@ export default function Showcase() {
       </Section>
 
       <Separator />
-      <p className="text-xs text-muted-foreground pb-8">Paperweight — v0.1</p>
+      <div className="space-y-2 pb-8">
+        <p className="text-xs text-muted-foreground">Paperweight — v0.1</p>
+        <p className="text-xs text-muted-foreground">
+          Built on top of <a href="https://ui.shadcn.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-4">shadcn/ui</a> · Made by <a href="https://github.com/justinm35" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-4">@justinm35</a>
+        </p>
+      </div>
     </div>
   )
 }
