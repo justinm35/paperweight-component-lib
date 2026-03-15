@@ -239,49 +239,6 @@ export default function Showcase() {
         </Card>
       </Section>
 
-      {/* Content Card */}
-      <Section title="Content Card">
-        <Card variant="panel" className="w-full max-w-2xl">
-          <CardHeader>
-            <div className="font-mono text-[11px] uppercase tracking-[0.1em] text-muted-foreground">Live Situation Brief</div>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            <div className="font-mono text-[10px] uppercase tracking-[0.05em] text-muted-foreground">
-              18 minutes ago · 13:59:09
-            </div>
-            <Badge variant="secondary" className="bg-[#333] text-foreground border-transparent">Assessment</Badge>
-            <div className="prose prose-sm dark:prose-invert max-w-none">
-              <p><strong>Current picture</strong><br/>
-              The 13:51Z GOES fire monitoring cycle confirms a complete baseline across all sectors.</p>
-              <p><strong>What matters now</strong></p>
-              <ul>
-                <li>Resource utilization across Line 3 is approaching 94% capacity during peak hours.</li>
-                <li>The overnight maintenance window for CNC Mill #1 may need to extend by 2 hours.</li>
-              </ul>
-              <p><strong>What to watch next</strong><br/>
-              Transitioning to the afternoon shift rotation. Monitor the press line throughput as the new batch begins.</p>
-            </div>
-            <div className="mt-4 pt-4 border-t border-border">
-              <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground mb-3">Sources</div>
-              <div className="flex items-center gap-1.5 flex-wrap">
-                <span className="font-mono text-xs text-secondary-foreground">GOES-19 sectors:</span>
-                <ChipLink href="#">SR</ChipLink>
-                <ChipLink href="#">PNW</ChipLink>
-                <ChipLink href="#">PSW</ChipLink>
-                <ChipLink href="#">SE</ChipLink>
-                <ChipLink href="#">SMV</ChipLink>
-              </div>
-            </div>
-          </CardContent>
-          <div className="flex items-center justify-end px-4 py-3 border-t border-border bg-surface">
-            <button className="font-mono text-[10px] uppercase tracking-[0.08em] text-primary hover:text-foreground transition-colors duration-150 bg-transparent border-none cursor-pointer">
-              Read Full Feed →
-            </button>
-          </div>
-        </Card>
-      </Section>
-
-      <Separator />
 
       {/* Tabs */}
       <Section title="Tabs">
