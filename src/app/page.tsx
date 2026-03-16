@@ -24,6 +24,7 @@ import { Spinner } from "@/components/ui/spinner"
 import { SonnerDemo } from "./sonner-demo"
 import { ComboboxDemo } from "./combobox-demo"
 import { DropdownDemo } from "./dropdown-demo"
+import { CommandDemo } from "./command-demo"
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -428,6 +429,11 @@ export default function Showcase() {
       {/* Dropdown Menu */}
       <Section title="Dropdown Menu">
         <DropdownDemo />
+      </Section>
+
+      {/* Command */}
+      <Section title="Command">
+        <CommandDemo />
       </Section>
 
       {/* Spinner */}
